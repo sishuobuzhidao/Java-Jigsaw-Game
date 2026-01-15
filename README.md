@@ -7,10 +7,11 @@ I put all useful images into image.zip.
 packages:
 /codes: all .java files
 /素材: all images
-      /GIA
-      /Minecraft
-      /sishuo
-      /wood
-      /素材/image: .png that are not used for the main game tiles
+      {/GIA
+       /Minecraft
+       /sishuo
+       /wood
+       /素材/image: .png that are not used for the main game tiles }
 
+Not all images used are owned by me.
 I had a .exe version that can be played directly, but I will not upload that here.
