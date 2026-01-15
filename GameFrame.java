@@ -17,7 +17,7 @@ public class GameFrame extends JFrame implements KeyListener{
     int[] tempArr = new int[16];
     boolean realVictory = false;
     boolean successActivated = false;
-    String[] jigsawImage = {"\u7D20\u6750\\\\sishuo\\\\", "\u7D20\u6750\\\\GIA\\\\", "\u7D20\u6750\\\\Minecraft\\\\", "\u7D20\u6750\\\\wood\\\\"};
+    String[] jigsawImage = {"JigsawGame\\\\\u7D20\u6750\\\\sishuo\\\\", "JigsawGame\\\\\u7D20\u6750\\\\GIA\\\\", "JigsawGame\\\\\u7D20\u6750\\\\Minecraft\\\\", "JigsawGame\\\\\u7D20\u6750\\\\wood\\\\"};
     int jigsawIndex = 0;
 
     //创建游戏主界面
@@ -46,13 +46,13 @@ public class GameFrame extends JFrame implements KeyListener{
         menu.add(aboutMenu);
 
         JMenuItem restartMI = new JMenuItem("Restart");//选项hover
-        // JMenuItem reLogInMI = new JMenuItem("re-Log In");
+        JMenuItem reLogInMI = new JMenuItem("re-Log In");
         JMenuItem changeIconMI = new JMenuItem("Change Image");
         JMenuItem exitMI = new JMenuItem("Exit");
 
         functionMenu.add(restartMI);
         functionMenu.add(changeIconMI);
-        // functionMenu.add(reLogInMI);
+        functionMenu.add(reLogInMI);
         functionMenu.add(exitMI);
 
         JMenuItem advertisementMI = new JMenuItem("Advertisement");
@@ -105,7 +105,7 @@ public class GameFrame extends JFrame implements KeyListener{
                 jd.setSize(500,500);
                 jd.setLocationRelativeTo(null);
                 jd.setAlwaysOnTop(true);
-                ImageIcon iii = new ImageIcon("\u7D20\u6750\\\u7D20\u6750\\image\\ad.png");
+                ImageIcon iii = new ImageIcon("JigsawGame\\\u7D20\u6750\\\u7D20\u6750\\image\\ad.png");
                 JLabel jjll = new JLabel(iii);
                 jjll.setSize(500,500);
                 jd.add(jjll);
@@ -146,7 +146,7 @@ public class GameFrame extends JFrame implements KeyListener{
         }
 
         //背景图片
-        ImageIcon background = new ImageIcon("素材\\素材\\image\\background.png");//相对路径,从项目名开始。
+        ImageIcon background = new ImageIcon("JigsawGame\\素材\\素材\\image\\background.png");//相对路径,从项目名开始。
         JLabel backJlabel = new JLabel(background);
         backJlabel.setBounds(40,40,508,560);
         this.getContentPane().add(backJlabel);//先加载的图片在上面，后加载的图片在下面
@@ -272,7 +272,7 @@ public class GameFrame extends JFrame implements KeyListener{
     }
     
     public void success(){
-        ImageIcon successIcon = new ImageIcon("素材\\素材\\image\\win.png");
+        ImageIcon successIcon = new ImageIcon("JigsawGame\\素材\\素材\\image\\win.png");
         JLabel successFrame = new JLabel(successIcon);
         successFrame.setBounds(150,300,197,73);
         this.getContentPane().add(successFrame);
